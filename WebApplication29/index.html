@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/font-awesome.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-6 col-md-offset-3">
+                <h1>Nasser's Awesome Zoo</h1>
+                <div class="well">
+                    <input type="text" class="form-control" id="name" placeholder="Name" />
+                    <input type="text" class="form-control" id="type" placeholder="Type" />
+                    <input type="text" class="form-control" id="breed" placeholder="Breed" />
+                    <input type="text" class="form-control" id="habitat" placeholder="Habitat" />
+                    <input type="text" class="form-control" id="image" placeholder="Image" /><br />
+                    <button id="add" class="btn btn-primary btn-block" onclick="app.create()"><i class="fa fa-plus"></i>&nbsp;Add</button>
+                    <button id="save" class="btn btn-success" onclick="app.save()"><i class="fa fa-save"></i>&nbsp; Save</button>
+                </div>
+                <div class="well" id="output">
+                </div>
+                <div class="well">
+                    <button class="btn btn-info" onclick="app.prev()"><i class="fa fa-arrow-left"></i>&nbsp; Previous</button>
+                    <button class="btn btn-info pull-right" onclick="app.next()"><i class="fa fa-arrow-right"></i>&nbsp; Next</button>
+                </div>
+                <div class="well">
+                    <button id="edit" class="btn btn-warning" onclick="app.edit()"><i class="fa fa-pencil"></i>&nbsp; Edit</button>
+                    <button class="btn btn-danger pull-right" onclick="app.delete()"><i class="fa fa-trash-o"></i>&nbsp; Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Scripts/jquery-1.9.0.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
